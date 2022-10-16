@@ -1,0 +1,260 @@
+body{
+    font-family: 'Fredoka One';
+    background-image: url(img/fondo.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+
+header{
+    vertical-align: top;
+    background-color: transparent;
+}
+header #logo{
+    display: inline-block;
+    height: 56px;
+    width: auto;
+    margin: 40px;
+    padding: 5px;
+    background-color: transparent;
+    border-radius: 50%;
+    transition: 0.5s all;
+}
+header #logo:hover{
+    background-color: #0A3871;
+    border-radius: 50%;
+}
+header #titulo{
+    vertical-align: top;
+    margin: 40px 100px;
+    display: inline-block;
+
+    font-family: 'Fredoka One';
+    font-size: 56px;
+    text-align: center;
+    color: white;
+    text-shadow: 4px 4px 0 #0bae9f;   
+}
+
+.inicio_edu{
+    display: block; 
+}
+.image_edu{
+    width: 40%;
+    height: auto;
+    margin: 10px auto;
+}
+.image_edu img{
+    width: 100%;
+}
+.buttons_edu{
+    width: 65%;
+    height: auto;
+    margin: 5px auto;
+}
+.buttons_edu a{
+    display: inline-block;
+    width: 38%;
+    padding: 10px;
+    margin: 20px 4%;
+    cursor: pointer;
+
+    font-size: 32px;
+    text-align: center;
+
+    background-color: white;
+    color: #6128d8;
+    border: 5px solid #6128d8;
+    border-radius: 50px;
+    transition: 0.7s all;
+}
+.buttons_edu a:hover{
+    background-color: #6128d8;
+    color: white;
+    border: 5px solid white;
+}
+.buttons_edu a:active{
+    font-size: 28px;
+}
+#glosario{
+    display: none;
+}
+.buttons_glos{
+    width: 38%;
+    height: auto;
+    margin: 0 8% 0 auto;
+}
+.buttons_glos a{
+    display: inline-block;
+    width: 30%;
+    height: auto;
+    margin: 5px;
+    padding: 15px;
+
+    font-size: 20px;
+    text-align: center;
+    color: #e50775;
+    background-color: white;
+    border-radius: 20px;
+    border: 3px solid #e50775;
+    transition: 0.7s all;
+}
+.buttons_glos a:hover{
+    background-color: #e50775;
+    color: white;
+    border: 3px solid white;
+}
+.buttons_glos a:active{
+    font-size: 15px;
+}
+#tabla{
+    width: 75%;
+    max-height: 320px;
+    overflow-y: scroll;
+    margin: 10px auto;
+    padding: 30px;
+    border-radius: 40px 0 0 40px;
+    border: 5px solid #6128d8;
+    background-color: white;
+}
+th{
+    height: 40px;
+    font-size: 32px;
+    text-align: center;
+    color: #e50775;
+    vertical-align: middle;
+}
+td{
+    height: fit-content;
+    padding: 40px 10px;
+    font-size: 25px;
+    text-align: left;
+    color: #231b36;
+    border-bottom: 5px solid #e50775;
+}
+
+footer{
+    background-color: #2596be;
+    padding: 20px 0;
+}
+footer p{
+    font-size: 14px;
+    text-align: center;
+    color: #F3F5FC;
+    padding-top: 5px;
+}
+.icon-container{
+    width: fit-content;
+    margin: 0 auto;
+    padding: 5px 0;
+    height: 1em;
+}
+.icon-container img{
+    width: auto;
+    height: 1em;
+}
+
+
+
+
+
+@media screen and (max-width:1150px) {
+    @media screen and (min-width:669px) {
+        header #logo{
+            display: block;
+            margin: 40px 40px;
+        }
+        header #titulo{
+            display: block;
+
+            width: fit-content;
+            margin: 80px auto;
+
+            font-size: 65px;   
+        }
+        .image_edu {
+            width: 80%;
+            margin: 50px auto;
+        }
+        .buttons_edu {
+            width: 80%;
+            margin: 50px auto;
+        }
+        .buttons_edu a {
+            display: inline-block;
+            width: 35%;
+            padding: 2.5%;
+            margin: 30px 4%;
+        }
+        
+        .buttons_glos {
+            width: 65%;
+            height: auto;
+            margin: 50px 1% 50px auto;
+        }
+        #tabla {
+            width: 85%;
+            max-height: 650px;
+            margin: 80px auto;
+        }
+    }
+}
+
+
+
+@media screen and (max-width:670px) {
+    header #logo{
+        display: block;
+        margin: 20px 40px;
+    }
+    header #titulo{
+        display: block;
+
+        width: fit-content;
+        margin: 50px auto;
+
+        font-size: 20px;  
+    }
+    .image_edu {
+        width: 90%;
+        height: auto;
+        margin: 80px auto;
+    }
+    .buttons_edu a {
+        display: block;
+        width: 82%;
+        margin: 30px auto;
+        font-size: 18px;
+    }
+
+    .buttons_glos {
+        width: 72%;
+        margin: 10px 4% 10px auto;
+    }
+    .buttons_glos a {
+        width: 40%;
+        margin: 10px 1%;
+        padding: 8px 2%;
+        font-size: 18px;
+        border-radius: 15px;
+    }
+    #tabla {
+        width: 85%;
+        max-height: 420px;
+        margin: 50px auto;
+        padding: 10px;
+        border-radius: 15px 0 0 15px;
+    }
+    th {
+        height: auto;
+        padding: 3px;
+        font-size: 14px;
+    }
+    td {
+        padding: 2px 1px;
+        font-size: 12px;
+        text-align: left;
+        border-bottom: 3px solid #e50775;
+    }
+}

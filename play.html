@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width">
+        <title>Space-Fun</title>
+
+        <link rel="stylesheet" href="css/reset.css">
+        <link rel="stylesheet" href="css/style_play.css">
+        <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet">
+        
+        <script type = "text/javascript" src="program.js"></script>
+    </head>
+
+    <body onload="palabraOcultaHTML()">
+        <header>
+            <img id="logo" src="Material/Logo-blanco.png" alt="Logo Alura">
+            <h1 id="titulo">¡Ayuda al astronauta Pipo!</h1>
+        </header>
+
+        <main id="game">
+            <div class="buttons_play">
+                <a id="pista" href="play.html">Reiniciar</a>
+                <a id="inicio" href="index.html">Inicio</a>
+            </div> 
+
+            <div class="image_play">
+                <img id="noError" src="Material/0error.png" alt="Pipo está en problemas!">
+                <img id="oneError" src="Material/1error.png" alt="Pipo está en problemas!">
+                <img id="twoError" src="Material/2error.png" alt="Pipo está en problemas!">
+                <img id="threeError" src="Material/3error.png" alt="Pipo está en problemas!">
+                <img id="fourError" src="Material/4error.png" alt="Pipo está en problemas!">
+            </div>
+
+            <div id="password">
+                <textarea id="visible" cols="100" rows="5" readonly placeholder="Contraseña"></textarea>
+                <textarea style="display: none;" id="oculto" cols="30" rows="2" readonly placeholder="Password known"></textarea>
+                
+            </div>
+               
+            <div id="letters">
+                <a id="a" href="#" onclick="compare(A)">A</a>
+                <a id="b" href="#" onclick="compare(B)">B</a>
+                <a id="c" href="#" onclick="compare(C)">C</a>
+                <a id="d" href="#" onclick="compare(D)">D</a>
+                <a id="e" href="#" onclick="compare(E)">E</a>
+                <a id="f" href="#" onclick="compare(F)">F</a>
+                <a id="g" href="#" onclick="compare(G)">G</a>
+                <a id="h" href="#" onclick="compare(H)">H</a>
+                <a id="i" href="#" onclick="compare(I)">I</a>
+                <a id="j" href="#" onclick="compare(J)">J</a>
+                <a id="k" href="#" onclick="compare(K)">K</a>
+                <a id="l" href="#" onclick="compare(L)">L</a>
+                <a id="m" href="#" onclick="compare(M)">M</a>
+                <a id="n" href="#" onclick="compare(N)">N</a>
+                <a id="o" href="#" onclick="compare(O)">O</a>
+                <a id="p" href="#" onclick="compare(P)">P</a>
+                <a id="q" href="#" onclick="compare(Q)">Q</a>
+                <a id="r" href="#" onclick="compare(R)">R</a>
+                <a id="s" href="#" onclick="compare(S)">S</a>
+                <a id="t" href="#" onclick="compare(T)">T</a>
+                <a id="u" href="#" onclick="compare(U)">U</a>
+                <a id="v" href="#" onclick="compare(V)">V</a>
+                <a id="w" href="#" onclick="compare(W)">W</a>
+                <a id="x" href="#" onclick="compare(X)">X</a>
+                <a id="y" href="#" onclick="compare(Y)">Y</a>
+                <a id="z" href="#" onclick="compare(Z)">Z</a>
+            </div>  
+        </main>
+
+        <main id="win">
+            <div class="text">
+                ¡Has acertado! El astronauta Pipo está a salvo en su nave gracias a tí, te has ganado la MEDALLA DE HEROE de la guardia espacial.
+            </div>
+
+            <div class="box">
+                <div class="imagenf">
+                    <img src="material/medalla.png" alt="Medalla por ganar">    
+                </div>
+                
+                <div class="boton">
+                    <a href="play.html">Jugar de nuevo! &#128513;</a>
+                    <a href="index.html">Volver a inicio</a>
+                </div>                     
+            </div>
+        </main>
+
+        <main id="lose">
+            <div class="text">
+                ¡Oh no! El astronauta Pipo se ha estrellado con el meteoroide. Pero no te preocupes, la guardia espacial lo ayudará y pronto volverá a comandar su nave.
+            </div>
+
+            <div class="box">
+                <div class="imagenf">
+                    <img src="material/crash.png" alt="Pipo se ha estrellado">    
+                </div>
+                
+                <div class="boton">
+                    <a href="play.html">Volver a intentar! &#128513;</a>
+                    <a href="index.html">Volver a inicio</a>
+                </div>                     
+            </div>
+        </main>
+
+        <footer>
+            <p>&copy Creado by MrGomez / Alura-Latam </p>
+
+            <div class="icon-container">
+                <a href="https://www.linkedin.com/in/juan-gomez-7554a1218/"><img src="Material/LinkedIn_logo_initials.png" alt="Logo Linkedin"></a>
+                <a href="https://github.com/MrGomez19"><img src="Material/Github_logo.png" alt="Logo Git-hub"></a>
+                <a href="mailto:jgomez19996@gmail.com"><img src="Material/mail-logo.png" alt="Mail Logo"></a>
+            </div>
+        </footer>
+
+    </body>

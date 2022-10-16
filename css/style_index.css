@@ -1,0 +1,328 @@
+body{
+    font-family: 'Fredoka One';
+    background-image: url(img/fondo.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+
+header{
+    background-color: transparent;
+}
+header #logo{
+    display: inline-block;
+    height: 56px;
+    width: auto;
+    margin: 40px;
+    padding: 5px;
+    background-color: transparent;
+    border-radius: 50%;
+    transition: 0.5s all;
+}
+header #logo:hover{
+    background-color: #0A3871;
+    border-radius: 50%;
+}
+header #titulo{
+    vertical-align: top;
+    margin: 30px 300px;
+    display: inline-block;
+
+    font-size: 70px;
+    text-align: center;
+    color: white;
+    text-shadow: 4px 4px 0 #0bae9f;   
+}
+
+
+
+.inicio{
+    width: 100%;
+}
+.image {
+    display: inline-block;
+    width: 30%;
+    height: auto;
+    margin: 5% 4%;
+}
+.image img{
+    width: 100%;
+    height: auto;
+}
+.buttons {
+    display: inline-block;
+    position: absolute;
+    top: 400px;
+    width: 50%;
+    height: auto;
+    margin: 0 auto;
+}
+.buttons a{
+    font-size: 36px;
+    text-align: center;
+
+    display: block;
+    width: 85%;
+    height: auto;
+    padding: 25px 0;
+    margin: 50px auto;
+    cursor: pointer;
+}
+.buttons #jugar{
+    background-color: white;
+    color: #e50775;
+    border: 5px solid #e50775;
+    border-radius: 50px;
+    transition: 0.7s all;
+}
+.buttons #glosario{
+    background-color: white;
+    color: #6128d8;
+    border: 5px solid #6128d8;
+    border-radius: 50px;
+    transition: 0.7s all;
+}
+.buttons #jugar:hover{
+    background-color: #e50775;
+    color: white;
+    border: 5px solid white;
+}
+.buttons #glosario:hover{
+    background-color: #6128d8;
+    color: white;
+    border: 5px solid white;
+}
+.buttons #jugar:active{
+    font-size: 30px;
+}
+.buttons #glosario:active{
+    font-size: 30px;
+}
+
+#popup{
+    display: none;
+    position: fixed;
+    width: 50%;
+    height: 300px;
+    margin: 0 25%;
+    top: 200px;
+
+    background: #b39fe0;
+    border-radius: 30px;
+    border: 5px solid #e50775;
+}
+.descripcion{
+    background: #6128d8;
+    border-radius: 10px;
+    width: 90%;
+    height: auto;
+    padding: 8px;
+    margin: 5px auto;
+
+    font-size: 20px;
+    color: white;
+}
+.contenedor{
+    width: 90%;
+    height: auto;
+    margin: 10px auto;
+}
+.imagen-pipo{
+    display: inline-block;
+    width: 35%;
+}
+.imagen-pipo img{
+    width: 90%;
+    margin: 0 7%;
+}
+.boton{
+    display: inline-block;
+    vertical-align: top;
+    width: 35%;
+    margin: 0 7%;
+
+    font-size: 20px;
+    text-align: center;
+}
+.boton a{
+    display: block;
+    margin: 20px 0;
+    padding: 15px;
+    color: #e50775;
+    background-color: white;
+    border-radius: 20px;
+    border: 3px solid #e50775;
+    transition: 0.7s all;
+}
+.boton a:hover{
+    color: white;
+    background-color: #e50775;
+    border: 3px solid white;
+}
+.boton a:active{
+    font-size: 16px;
+}
+
+
+
+footer{
+    background-color: #2596be;
+    padding: 20px 0;
+}
+footer p{
+    font-size: 14px;
+    text-align: center;
+    color: #F3F5FC;
+    padding-top: 5px;
+}
+.icon-container{
+    width: fit-content;
+    margin: 0 auto;
+    padding: 5px 0;
+    height: 1em;
+}
+.icon-container img{
+    width: auto;
+    height: 1em;
+}
+
+
+
+
+
+
+
+@media screen and (max-width:1150px) {
+    @media screen and (min-width:669px) {
+        header #logo{
+            display: block;
+            margin: 20px 40px;
+        }
+        header #titulo{
+            display: block;
+
+            width: fit-content;
+            margin: 10px auto;
+
+            font-size: 80px;   
+        }
+
+
+        .image {
+            display: block;
+            width: 50%;
+            height: auto;
+            margin: 70px auto;
+        }
+
+        .buttons {
+            display: block;
+            position: initial;
+            width: 90%;
+            margin: 20px auto;
+        }
+        .buttons a{
+            display: inline-block;
+            font-size: 26px;
+            width: 40%;
+            padding: 25px 0;
+            margin: 50px 4%;
+        }
+
+
+        #popup {
+            width: 70%;
+            height: fit-content;
+            margin: 0 15%;
+            top: 5%;
+        }
+        .descripcion {
+            width: 80%;
+            padding: 12px;
+            margin: 30px auto;
+            font-size: 18px;
+        }
+        .contenedor {
+            width: 80%;
+            margin: 20px auto;
+        }
+        .imagen-pipo {
+            display: block;
+            width: 40%;
+            margin: 10px auto;
+        }
+        .boton {
+            display: block;
+            width: 90%;
+            margin: 10px auto;
+        }
+    }
+}
+
+
+
+@media screen and (max-width:670px) {
+    header #logo{
+        display: block;
+        margin: 20px 40px;
+    }
+    header #titulo{
+        display: block;
+
+        width: fit-content;
+        margin: 10px auto;
+
+        font-size: 40px;  
+    }
+
+
+    .image {
+        display: block;
+        width: 70%;
+        height: auto;
+        margin: 70px auto;
+    }
+
+    .buttons {
+        display: block;
+        position: initial;
+        width: fit-content;
+        margin: 20px auto;
+    }
+    .buttons a{
+        font-size: 26px;
+        width: 270px;
+        padding: 25px 0;
+        margin: 50px auto;
+    }
+
+
+    #popup {
+        width: 70%;
+        height: fit-content;
+        margin: 0 15%;
+        top: 10%;
+    }
+    .descripcion {
+        width: 80%;
+        padding: 12px;
+        margin: 30px auto;
+        font-size: 18px;
+    }
+    .contenedor {
+        width: 80%;
+        margin: 20px auto;
+    }
+    .imagen-pipo {
+        display: block;
+        width: 40%;
+        margin: 10px auto;
+    }
+    .boton {
+        display: block;
+        width: 90%;
+        margin: 10px auto;
+    }
+
+}

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width">
+        <title>Space-Fun</title>
+
+        <link rel="stylesheet" href="css/reset.css">
+        <link rel="stylesheet" href="css/style_index.css">
+        <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet">
+        
+        <script type = "text/javascript" src="program.js"></script>
+    </head>
+
+    <body>
+        <header>
+            <img id="logo" src="Material/Logo-blanco.png" alt="Logo Alura">
+            <h1 id="titulo">¡Salva a Pipo!</h1>
+        </header>
+
+        <main>
+            <div class="inicio">
+                <div class="image">
+                    <img src="Material/rocket.png" alt="Pipo, el pato astronauta pregunta si están listos para jugar">
+                </div>
+
+                <div class="buttons">
+                    <a id="jugar" href="#" onclick="abrir_popup1()">¡Vamos a Jugar!</a>
+                    <a id="glosario" href="glosario.html">Glosario</a>
+                </div>                
+            </div>
+
+            <div id="popup">
+                <div class="descripcion">
+                    Adivina la constraseña a tiempo para que el astronauta Pipo regrese a salvo a su nave espacial.
+                </div>
+
+                <div class="contenedor">
+                    <div class="imagen-pipo">
+                        <img src="material/duck1.png" alt="Pipo explicando el juego">    
+                    </div>
+                    
+                    <div class="boton">
+                        <a href="play.html">Estoy listo! &#128513;</a>
+                        <a href="#" onclick="cerrar_popup1()">Mejor no &#128549;</a>
+                    </div>                     
+                </div>
+            </div>
+        </main>       
+
+        <footer>
+            <p>&copy Creado por MrGomez / Alura-Latam </p>
+
+            <div class="icon-container">
+                <a href="https://www.linkedin.com/in/juan-gomez-7554a1218/"><img src="Material/LinkedIn_logo_initials.png" alt="Logo Linkedin"></a>
+                <a href="https://github.com/MrGomez19"><img src="Material/Github_logo.png" alt="Logo Git-hub"></a>
+                <a href="mailto:jgomez19996@gmail.com"><img src="Material/mail-logo.png" alt="Mail Logo"></a>
+            </div>
+        </footer>
+    </body>
